@@ -8,7 +8,7 @@
     --hero-background-color: #2f303a;
     --link-hover-color: #2196f3;
     --link-opacity-color: rgba(255, 255, 255, 0.6);
-    --header-tel-color: #757575;
+    --header-right-color: #757575;
     --section-title-color: #212121;
     --item-title-color: #212121;
     --item-text-color: #757575;
@@ -19,6 +19,10 @@
     --btn-background-color: #f5f4fa;
     --btn-hover-color: #ffffff;
     --btn-hover-background-color: #2196f3;
+    --studio-header-color: #000000;
+    --studio-footer-color: #ffffff;
+    --team-list-item-background-color: #ffffff;
+    --btn-active-background-color: #188ce8;
 }
 
 body {
@@ -40,7 +44,7 @@ body {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--btn-color);
@@ -50,6 +54,10 @@ body {
 .btn:hover {
     color: var(--btn-hover-color);
     background-color: var(--btn-hover-background-color);
+}
+
+.btn:active {
+    background-color: var(--btn-active-background-color);
 }
 
 .section-title {
@@ -75,6 +83,14 @@ body {
     color: var(--logo-color);
 }
 
+.studio-header {
+    color: var(--studio-header-color);
+}
+
+.studio-footer {
+    color: var(--studio-footer-color);
+}
+
 .header-link {
     font-weight: 500;
     font-size: 14px;
@@ -83,8 +99,12 @@ body {
     color: inherit;
 }
 
-.header-link.header-tel {
-    color: var(--header-tel-color);
+.header-link.active-link {
+    color: var(--link-hover-color);
+}
+
+.header-link.header-right {
+    color: var(--header-right-color);
 }
 
 .header-link:hover,
@@ -108,12 +128,18 @@ body {
 }
 
 .hero-btn {
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+    cursor: pointer;
     color: var(--hero-btn-color);
     background-color: var(--hero-btn-background-color);
+}
+
+.hero-btn:active {
+    background-color: var(--btn-active-background-color);
 }
 
 .particulars-item-title {
@@ -136,6 +162,10 @@ body {
     background-color: var(--team-background-color);
 }
 
+.team-list-item {
+    background-color: var(--team-list-item-background-color);
+}
+
 .team-item-title {
     font-weight: 500;
     font-size: 16px;
@@ -151,6 +181,10 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--item-text-color);
+}
+
+.particulars-header {
+    visibility: hidden;
 }
 
 /*-PORTFOLIO-*/
@@ -169,13 +203,16 @@ body {
     color: var(--item-text-color);
 }
 
+.portfolio-header {
+    visibility: hidden;
+}
+
 /*-FOOTER-*/
 .footer {
     background-color: var(--background-footer-color);
 }
 
 .footer-link {
-    font-weight: 400;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
