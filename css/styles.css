@@ -23,6 +23,7 @@
     --studio-footer-color: #ffffff;
     --team-list-item-background-color: #ffffff;
     --btn-active-background-color: #188ce8;
+    --project-item-background-color: #ffffff;
 }
 
 body {
@@ -188,6 +189,10 @@ body {
 }
 
 /*-PORTFOLIO-*/
+.project-item {
+    background-color: var(--project-item-background-color);
+}
+
 .project-item-title {
     font-weight: 700;
     font-size: 18px;
